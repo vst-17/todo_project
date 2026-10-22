@@ -18,4 +18,9 @@ class TodoList:
 
     def count_done(self):
         return sum(1 for t in self.tasks if t["done"])
+
+    def delete_task(self, index):
+        if index < 0 or index >= len(self.tasks):
+            raise IndexError("Task not found")
+        return self.tasks.pop(index)
     
