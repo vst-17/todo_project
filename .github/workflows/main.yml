@@ -26,7 +26,6 @@ jobs:
       run: |
         pytest -v
 
-    # ВМЕСТО ПРОВЕРКИ, ТЕПЕРЬ ТУТ АВТОМАТИЧЕСКАЯ СБОРКА ДОКУМЕНТАЦИИ
     - name: Generate Documentation
       run: |
         pdoc todo.py -o docs
