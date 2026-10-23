@@ -35,4 +35,3 @@ jobs:
       with:
         name: project-documentation
         path: docs/
-        test -s README.md && echo "Documentation exists"
